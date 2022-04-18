@@ -2,9 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { data } from '../../utils/navbar'
 import { Container, Wrapper } from './style'
+import {Outlet} from 'react-router-dom'
 
 export const Navbar = () => {
   return (
+      <>
     <Container>
         <Wrapper>
             <Wrapper.Logo />
@@ -30,5 +32,7 @@ export const Navbar = () => {
             <Wrapper.Menu />
         </Wrapper>
     </Container>
+    <Outlet />
+    </>
   )
 }

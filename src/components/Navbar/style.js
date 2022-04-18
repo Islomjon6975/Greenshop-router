@@ -14,25 +14,30 @@ export const Container = styled.div`
     height: 78px;
     background-color: #FFFFFF;
     border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
-    @media (max-width: 375px) {
-        height: 40px;
-    }
     @media (max-width: 975px) {
         height: 65px;
+    }
+    @media (max-width: 375px) {
+        height: 50px;
     }
 `
 
 export const Wrapper = styled.div`
     display: flex;
     align-items: center;
+    height: 100%;
 `
 
 Wrapper.Logo = styled(logo)`
     width: 34.4px;
     height: 34.4px;
     @media (max-width: 375px) {
-        width: 30px;
-        height: 30px;
+        width: 32px;
+        height: 32px;
+    }
+    @media (max-width: 375px) {
+        width: 29px;
+        height: 29px;
     }
 `
 
@@ -54,24 +59,28 @@ Wrapper.Search = styled(search)`
     width: 20px;
     height: 20px;
     margin-right: 30px;
-    @media (max-width: 375px) {
-        width: 14px;
-        height: 14px;
-        margin-right: 20px;
-    }
     @media (max-width: 975px) {
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
         margin-right: 25px;
     }
-`
+    @media (max-width: 375px) {
+        width: 17px;
+        height: 17px;
+        margin-right: 20px;
+    }
+    `
 
 Wrapper.Basket = styled(basket)`
     width: 23px;
     height: 23px;
-    @media (max-width: 375px) {
+    @media (max-width: 975px) {
         width: 21px;
         height: 21px;
+    }
+    @media (max-width: 375px) {
+        width: 19px;
+        height: 19px;
     }
 `
 
@@ -98,12 +107,13 @@ Wrapper.Login = styled.div`
     line-height: 19px;
     color: #FFFFFF;
     margin-left: 30px;
-    @media (max-width: 375px) {
-        display: none;
-    }
     @media (max-width: 975px) {
         display: none;
     }
+    @media (max-width: 375px) {
+        display: none;
+    }
+    
 `
 
 Wrapper.BasketWrapper = styled.div`
@@ -134,16 +144,17 @@ Wrapper.Menu = styled(menu)`
     display: none;
     width: 18px;
     height: 18px;
-    @media (max-width: 375px) {
-        display: block;
-        width: 18px;
-        height: 18px;
-        margin-left: 20px;
-    }
     @media (max-width: 975px) {
         display: block;
         width: 20px;
         height: 20px;
         margin-left: 25px;
     }
+    @media (max-width: 375px) {
+        display: block;
+        width: 18px;
+        height: 18px;
+        margin-left: 20px;
+    }
+    
 `

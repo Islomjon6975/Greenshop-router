@@ -6,6 +6,8 @@
 }
 
 .navitem{
+    display: flex;
+    align-items: center;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -14,6 +16,11 @@
     color: #3D3D3D;
     text-decoration: none;
     margin: 0 25px;
+    height: 100%;
+}
+
+.navitem:focus{
+    border-bottom: 3px solid #46A358;
 }
 
 @media (max-width: 375px) {
@@ -32,4 +39,8 @@
     .navitem{
         display: none;
     }
+}
+
+.carousel{
+    width: 100%;
 }
