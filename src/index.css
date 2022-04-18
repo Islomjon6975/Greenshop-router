@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Dynalight&family=Eagle+Lake&family=Inter:wght@700&family=Orbitron:wght@600;800&family=Padauk&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navitem{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3D3D3D;
+    text-decoration: none;
+    margin: 0 25px;
+}
+
+@media (max-width: 375px) {
+    .navitem{
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+    .navitem{
+        margin: 0 18px;
+    }
+}
+
+@media (max-width: 975px) {
+    .navitem{
+        display: none;
+    }
 }
